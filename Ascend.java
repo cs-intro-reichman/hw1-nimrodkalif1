@@ -8,9 +8,12 @@ public class Ascend
 		int b = (int) (Math.random() * lim);
 		int c = (int) (Math.random() * lim);
 
-		System.out.print(Math.min(Math.min(a,b), c) + " ");
-		System.out.print(Math.max(Math.min(a,b), c) + " ");
-		System.out.print(Math.max(Math.max(a,b), c));
+		int min = Math.min(Math.min(a,b), c);
+		int max = Math.max(Math.max(a,b), c);
+		int mid = a + b + c - min - max;
+		System.out.print(min + " ");
+		System.out.print(mid + " ");
+		System.out.print(max);
 		System.out.println();
 	}
 }
