@@ -11,8 +11,7 @@ public class TimeFormat {
 			afterMidday = "AM";
 		}
 
-		int minutes = Integer.parseInt(args[0].split(":")[1]);
+		String minutes = args[0].split(":")[1];
 		System.out.println(hours + ":" + minutes + " " + afterMidday);
-
 	}
 }
