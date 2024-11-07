@@ -6,7 +6,7 @@ public class NumWords {
 		int tens = (number / 10) % 10;
 		int ones = number % 10;
 		
-		String result = String.format("%d hundreds, %d tens, %d ones", hundreds, tens, ones);
+		String result = String.format("%d hundreds, %d tens, and %d ones", hundreds, tens, ones);
 		System.out.println(result);
 	}
 }
