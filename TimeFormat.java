@@ -6,7 +6,8 @@ public class TimeFormat {
 		String afterMidday = "";
 		if (hours != hours % 12) {
 			afterMidday = "PM";
-			hours %= 12;
+			if (hours != 12)
+				hours %= 12;
 		} else {
 			afterMidday = "AM";
 		}
